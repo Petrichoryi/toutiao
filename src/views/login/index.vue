@@ -91,6 +91,8 @@ export default {
 
         // 将后端返回的用户登录状态放到vuex中
         this.$store.commit('setUser', data.data)
+        // 登录成功，跳转会原来的页面
+        this.$router.back()
       } catch (err) {
         this.$toast.fail('登录失败！')
         console.log('登录失败！', err)
