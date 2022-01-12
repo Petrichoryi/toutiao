@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import './utils/dayjs'
+
 import Vant from 'vant'
 import 'vant/lib/index.css'
 // 导入全局样式
